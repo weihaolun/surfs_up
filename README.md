@@ -15,17 +15,23 @@ The purpose of this challenge is to:
 
 ## II. Results
 
-1.
-2. 
-3.
-4. 
+![junesept](https://user-images.githubusercontent.com/84211948/130350514-ac3021aa-913b-41a4-a2ff-585fd123032f.png)
 
-## III. Summary--Additional Queries and Tables
+1.	The minimum temperature is 64°F in June and is 56°F in September. June’s minimum temperature is 8°F higher than September’s minimum temperature.
+2.	The max temperature is 85°F in June and is 83°F in September. June’s max temperature 2°F higher than September’s max temperature.
+3.	The average temperature is 74.94°F in June and is 71.04°F in September. June is about 4°F higher than September.
+4.	Lower, middle and upper quartiles in June are all about 3-4°F higher than in Septempber.
 
-### 1. 
+## III. Summary
 
 
-### 2.	
+
+### Additional Queries and Tables
+
+#### 1. 
+
+
+#### 2.	
 
 
 
