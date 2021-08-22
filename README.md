@@ -30,15 +30,44 @@ However, temperature is not the only weather factor to determine the potential f
 
 ### Additional Queries and Tables
 
-#### 1. 
+#### 1. June Precipitation
 
+1.1 Write a query that filters the Measurement table to retrieve the precipatation for the month of June.
 
-#### 2.	
+```june_prcp = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 6)```
 
+1.2 Convert the June precipatation to a list.
 
+```june_prcp_list = [prcp.prcp for prcp in june_prcp]```
 
+1.3 Create a DataFrame from the list of precipitation for the month of June. 
 
+```june_prcp_df = pd.DataFrame(june_prcp_list, columns=["precipitation"])```
 
+1.4 Calculate and print out the summary statistics for the June precipitation DataFrame.
 
+```june_prcp_df.describe()```
 
+#### 2.	December Precipitation
 
+2.1 Write a query that filters the Measurement table to retrieve the precipatation for the month of December.
+
+```december_prcp = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 12)```
+
+2.2 Convert the December precipatation to a list.
+
+```december_prcp_list = [prcp.prcp for prcp in december_prcp]```
+
+2.3 Create a DataFrame from the list of precipitation for the month of December. 
+
+```december_prcp_df = pd.DataFrame(december_prcp_list, columns=["precipitation"])```
+
+2.4 Calculate and print out the summary statistics for the June precipitation DataFrame.
+
+```december_prcp_df.describe()```
+
+#### Precipitation Results
+
+![junedecemprpc](https://user-images.githubusercontent.com/84211948/130352019-43672b8b-a2cd-404e-9b30-4c0f07bd4924.png)
+
+June's average precipitation is 37.1% lower than December's precipitation. June's max and upper quartile precipitation are also both higher than December's. In conclusion, June's weather is more capable for surfing. With previous conclusion that June's temperture is higher, we can predict that June's surfing and ice cream business should be better.
