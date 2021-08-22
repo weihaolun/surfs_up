@@ -66,7 +66,7 @@ However, temperature is not the only weather factor to determine the potential f
 
 ```december_prcp_df.describe()```
 
-#### Precipitation Results
+#### 3. Precipitation Results
 
 ![junedecemprpc](https://user-images.githubusercontent.com/84211948/130352019-43672b8b-a2cd-404e-9b30-4c0f07bd4924.png)
 
